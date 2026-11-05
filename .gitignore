@@ -1,0 +1,55 @@
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Editors / agent tooling ---
+.atl/
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# --- Env / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Node / JS ---
+node_modules/
+.pnpm-store/
+.turbo/
+dist/
+build/
+out/
+coverage/
+.next/
+next-env.d.ts
+storybook-static/
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+.uv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# --- Docker / infra ---
+infra/compose/volumes/
+
+# --- Misc ---
+*.log
+.cache/
+celerybeat-schedule*
+
+# Uploaded documents (host bind mount for the production compose)
+data/
